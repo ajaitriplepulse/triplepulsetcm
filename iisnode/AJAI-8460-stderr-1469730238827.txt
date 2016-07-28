@@ -1,0 +1,9 @@
+Bad Request: Bad Request
+    at next (C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\node_modules\express\node_modules\connect\lib\proto.js:125:13)
+    at C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\node_modules\express\node_modules\connect\lib\middleware\bodyParser.js:54:23
+    at IncomingMessage.<anonymous> (C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\node_modules\express\node_modules\connect\lib\middleware\json.js:71:18)
+    at emitNone (events.js:67:13)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)

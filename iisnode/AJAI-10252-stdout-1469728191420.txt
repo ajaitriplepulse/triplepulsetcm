@@ -1,0 +1,16 @@
+Express server listening on port \\.\pipe\7cc48bfb-fef3-4ff9-bdda-24ab100c7724
+[90mGET / [32m200 [90m22ms[0m
+[90mGET / [32m200 [90m6ms[0m
+[90mGET /client [32m200 [90m2412ms - 3.98kb[0m
+{ [RequestError: Invalid object name 'clients'.]
+  name: 'RequestError',
+  message: 'Invalid object name \'clients\'.',
+  code: 'EREQUEST',
+  number: 208,
+  lineNumber: 1,
+  state: 1,
+  class: 16,
+  serverName: 'triplepulse',
+  procName: '',
+  precedingErrors: [] }
+[90mGET /client/8989898989 [31m500 [90m712ms - 23[0m

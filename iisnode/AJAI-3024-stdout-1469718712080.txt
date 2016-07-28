@@ -1,0 +1,3 @@
+Express server listening on port \\.\pipe\6a28794f-af91-4fb5-ab8a-d865b8de6f62
+[90mGET / [32m200 [90m13ms[0m
+[90mGET /patientmaster [36m304 [90m1188ms[0m

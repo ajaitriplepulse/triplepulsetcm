@@ -1,0 +1,17 @@
+Express server listening on port \\.\pipe\31df8dab-6480-4d03-8a88-a8a266e983c1
+[90mGET / [32m200 [90m21ms[0m
+{ clientName: 'Ajai',
+  clientMobile: '8989898989',
+  clientEmail: 'sankar@tickingminds.com',
+  clientPassword: '#sankar',
+  deviceId: '081c436583488a4',
+  phoneModel: 'Android SDK built for x86_64',
+  androidVersionId: '5.0.2',
+  softwareVersionName: '1.0',
+  softwareVersionCode: 1,
+  createdBy: 999,
+  createdDate: '2016-07-26T17:48:46.150Z',
+  updateFlag: false,
+  insertFlag: false }
+INSERT INTO Client(clientName,clientMobile,ClientEmail,ClientPassword,deviceId,phoneModel,androidVersionId,softwareVersionName,softwareVersionCode,createdBy,createdDate,updateFlag,insertFlag) values('Ajai','8989898989','sankar@tickingminds.com','#sankar','081c436583488a4','Android SDK built for x86_64','5.0.2','1.0','1','999','2016-07-26T17:48:46.150Z','0','0')SELECT clientId FROM Client WHERE clientId = SCOPE_IDENTITY();
+[90mPOST /client/ [32m200 [90m1740ms - 30[0m
