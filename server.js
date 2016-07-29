@@ -39,11 +39,12 @@ app.get('/Client/:clientMobile', user.clientMobile);
 
 app.post('/QualMaster', user.postQualMaster);
 app.post('/Client', user.postclient);
+app.post('/familydetails', user.getfamilydetails);
 
 // PUT Methods
 
 app.put('/QualMaster', user.putQualMaster);
-app.get('/PatientMaster', user.putPatientMaster);
+app.put('/PatientMaster', user.putPatientMaster);
 
 // DELETE Methods
 

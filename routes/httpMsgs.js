@@ -77,7 +77,8 @@ exports.showhome = function (req, res)
             { "url": "http://triplepulsetcm.azurewebsites.net/PatientMaster", "operation": "PUT", "Description": "To UPDATE record based on the PatientMaster ID in PatientMaster Table" },
             { "url": "http://triplepulsetcm.azurewebsites.net/Client", "operation": "GET", "Description": "To get all the details of the Client Table" },
             { "url": "http://triplepulsetcm.azurewebsites.net/Client/Clientmobilenumber", "operation": "GET", "Description": "To get specific details of the the client" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/Client", "operation": "POST", "Description": "To INSERT new record into the Client Table" },"Thank you for Visting Us !!"
+            { "url": "http://triplepulsetcm.azurewebsites.net/Client", "operation": "POST", "Description": "To INSERT new record into the Client Table" },
+            { "url": "http://triplepulsetcm.azurewebsites.net/familydetails", "operation": "POST", "Description": "To get family details based on the client ID" },"Thank you for Visting Us !!"
         ],null,4));
     res.end();
 };

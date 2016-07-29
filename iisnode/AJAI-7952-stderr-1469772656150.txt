@@ -1,0 +1,12 @@
+Application has thrown an uncaught exception and is terminated:
+Error: .get() requires callback functions but got a [object Undefined]
+    at C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\node_modules\express\lib\router\index.js:252:11
+    at Array.forEach (native)
+    at Router.route (C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\node_modules\express\lib\router\index.js:248:13)
+    at Router.(anonymous function) [as get] (C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\node_modules\express\lib\router\index.js:270:16)
+    at Function.app.(anonymous function) [as get] (C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\node_modules\express\lib\application.js:412:26)
+    at Object.<anonymous> (C:\Users\ajai\Documents\My Web Sites\triplepulse_2016\server.js:34:5)
+    at Module._compile (module.js:409:26)
+    at Object.Module._extensions..js (module.js:416:10)
+    at Module.load (module.js:343:32)
+    at Function.Module._load (module.js:300:12)

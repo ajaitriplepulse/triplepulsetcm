@@ -1,0 +1,6 @@
+Express server listening on port \\.\pipe\0a5eb413-e06c-4d47-806d-3eb8b4a8cc62
+[90mGET / [32m200 [90m31ms[0m
+{ clientId: '1' }
+select '{"clientId":"1","familyMembersArray"'+(select top 1 a.patientId,a.patientName,c.configDescription as relationship from patientMaster a,client b,config c where b.clientId=a.FK_clientId and a.FK_relationshipId=c.cId and a.FK_clientId=1for json path)
+[90mPOST /familydetails [32m200 [90m2186ms - 150[0m
+[ { '': '{"clientId":"1","familyMembersArray"[{"patientId":2,"patientName":"Sankar Santhanaraman","relationship":"Aunt"}]' } ]

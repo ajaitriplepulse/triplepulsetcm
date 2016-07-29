@@ -229,7 +229,7 @@ exports.putPatientMaster = function (req, res)
         FK_allergyId: req.body.FK_allergyId,
         FK_mobilityId: req.body.FK_mobilityId,
         patientName: req.body.patientName,
-        patientMobile: Request.body.patientMobile,     
+        patientMobile: req.body.patientMobile,     
         patientPhoto: req.body.patientPhoto,
         patientWeight: req.body.patientWeight,
         patientHeight: req.body.patientHeight,
@@ -541,6 +541,49 @@ exports.postclient = function (req, res)
                 }
             });
 
+        }
+    });
+};
+
+
+
+exports.getfamilydetails = function (req, res)
+{
+
+    var data = {
+        clientId: req.body.clientId
+    };
+
+    console.log(data);
+    sql.connect(settings.dbconfig, function (err)
+    {
+        if (err)
+        {
+            console.log(err);
+            res.send(500, "Cannot open connection.");
+        }
+        else
+        {
+            var request = new sql.Request();
+
+            var query1 = "select '{\"clientId\":\"" + data.clientId + "\",\"familyMembersArray\"'+";
+            var query2 = "(select top 1 a.patientId,a.patientName,c.configDescription as relationship from patientMaster a,client b,config c where b.clientId=a.FK_clientId and a.FK_relationshipId=c.cId and a.FK_clientId=" + data.clientId + "for json path)";
+            var query3 = query1 + query2;
+            console.log(query3);
+
+            request.query(query3, function (err, results)
+            {
+                if (err)
+                {
+                    console.log(err);
+                    res.send(500, "Cannot retrive records.");
+                }
+                else
+                {
+                    res.send(results);
+                    console.log(results);
+                }
+            });
         }
     });
 };
