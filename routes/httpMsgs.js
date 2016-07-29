@@ -67,18 +67,18 @@ exports.showhome = function (req, res)
     res.writeHead(200, { "Content-Type": "application/json" });
     res.write(JSON.stringify(["Welcome Triple Pulse !!",
     "Recommended Tool to use the below Rest Api : POSTMAN",
-            { "url": "http://triplepulsetcm.azurewebsites.net/QualMaster", "operation": "GET", "Description": "To get all the details of the QualMaster Table" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/QualMaster/QualID", "operation": "GET", "Description": "To get the specific details of the QualID" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/QualMaster", "operation": "POST", "Description": "To INSERT new record into the QualMaster Table" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/QualMaster", "operation": "PUT", "Description": "To UPDATE record based on the QualID" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/QualMaster", "operation": "DELETE", "Description": "To DELETE record based on the QualID" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/PatientMaster", "operation": "GET", "Description": "To get all the details of the PatientMaster Table" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/PatientMaster/patientId", "operation": "GET", "Description": "To get the specific details of the patientId" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/PatientMaster", "operation": "PUT", "Description": "To UPDATE record based on the PatientMaster ID in PatientMaster Table" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/Client", "operation": "GET", "Description": "To get all the details of the Client Table" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/Client/Clientmobilenumber", "operation": "GET", "Description": "To get specific details of the the client" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/Client", "operation": "POST", "Description": "To INSERT new record into the Client Table" },
-            { "url": "http://triplepulsetcm.azurewebsites.net/familydetails", "operation": "POST", "Description": "To get family details based on the client ID" },"Thank you for Visting Us !!"
+            { "url": "http://triplepulseapiapp.azurewebsites.net/QualMaster", "operation": "GET", "Description": "To get all the details of the QualMaster Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/QualMaster/QualID", "operation": "GET", "Description": "To get the specific details of the QualID" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/QualMaster", "operation": "POST", "Description": "To INSERT new record into the QualMaster Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/QualMaster", "operation": "PUT", "Description": "To UPDATE record based on the QualID" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/QualMaster", "operation": "DELETE", "Description": "To DELETE record based on the QualID" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/PatientMaster", "operation": "GET", "Description": "To get all the details of the PatientMaster Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/PatientMaster/patientId", "operation": "GET", "Description": "To get the specific details of the patientId" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/PatientMaster", "operation": "PUT", "Description": "To UPDATE record based on the PatientMaster ID in PatientMaster Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/Client", "operation": "GET", "Description": "To get all the details of the Client Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/Client/Clientmobilenumber", "operation": "GET", "Description": "To get specific details of the the client" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/Client", "operation": "POST", "Description": "To INSERT new record into the Client Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/familydetails", "operation": "POST", "Description": "To get family details based on the client ID" },"Thank you for Visting Us !!"
         ],null,4));
     res.end();
 };
