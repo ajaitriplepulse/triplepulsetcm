@@ -67,11 +67,6 @@ exports.showhome = function (req, res)
     res.writeHead(200, { "Content-Type": "application/json" });
     res.write(JSON.stringify(["Welcome Triple Pulse !!",
     "Recommended Tool to use the below Rest Api : POSTMAN",
-            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "GET", "Description": "To get all the details of the QualMaster Table" },
-            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster/QualID", "operation": "GET", "Description": "To get the specific details of the QualID" },
-            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "POST", "Description": "To INSERT new record into the QualMaster Table" },
-            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "PUT", "Description": "To UPDATE record based on the QualID" },
-            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "DELETE", "Description": "To DELETE record based on the QualID" },
             { "url": "http://triplepulseapiapp.azurewebsites.net/api/PatientMaster", "operation": "GET", "Description": "To get all the details of the PatientMaster Table" },
             { "url": "http://triplepulseapiapp.azurewebsites.net/api/PatientMaster/patientId", "operation": "GET", "Description": "To get the specific details of the patientId" },
             { "url": "http://triplepulseapiapp.azurewebsites.net/api/PatientMaster", "operation": "PUT", "Description": "To UPDATE record based on the PatientMaster ID in PatientMaster Table" },
@@ -82,6 +77,19 @@ exports.showhome = function (req, res)
         ],null,4));
     res.end();
 };
+
+/*
+
+{ "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "GET", "Description": "To get all the details of the QualMaster Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster/QualID", "operation": "GET", "Description": "To get the specific details of the QualID" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "POST", "Description": "To INSERT new record into the QualMaster Table" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "PUT", "Description": "To UPDATE record based on the QualID" },
+            { "url": "http://triplepulseapiapp.azurewebsites.net/api/QualMaster", "operation": "DELETE", "Description": "To DELETE record based on the QualID" },
+
+
+*/
+
+
 exports.updatePatientMaster=function (req,res) {
     //res.writeHead(200,{"Content-Type": "application/json"});
     res.send(JSON.stringify([{"patientUpdateStatus":"Success","patientUpdateError":"NIL"}]));
