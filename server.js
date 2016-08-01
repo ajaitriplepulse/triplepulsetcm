@@ -25,30 +25,30 @@ app.configure('development', function(){
 
 // GET Methods 
 
-app.get('/', routes.index);
-app.get('/users', user.list1);
-app.get('/homepage', user.homepage);
-app.get('/QualMaster', user.getQualMaster);
-app.get('/QualMaster/:QualID', user.getQualMasterID);
-app.get('/PatientMaster', user.getpatientMaster);
-app.get('/PatientMaster/:patientId', user.getPatientMasterID);
-app.get('/Client', user.getclient);
-app.get('/Client/:clientMobile', user.clientMobile);
+app.get('/api/', routes.index);
+app.get('/api/users/', user.list1);
+app.get('/api/homepage/', user.homepage);
+app.get('api/QualMaster', user.getQualMaster);
+app.get('/api//QualMaster/:QualID', user.getQualMasterID);
+app.get('/api/PatientMaster', user.getpatientMaster);
+app.get('/api/PatientMaster/:patientId', user.getPatientMasterID);
+app.get('/api/Client', user.getclient);
+app.get('api/Client/:clientMobile', user.clientMobile);
 
 // POST Methods 
 
-app.post('/QualMaster', user.postQualMaster);
-app.post('/Client', user.postclient);
-app.post('/familydetails', user.getfamilydetails);
+app.post('/api/QualMaster', user.postQualMaster);
+app.post('/api/Client', user.postclient);
+app.post('/api/familydetails', user.getfamilydetails);
 
 // PUT Methods
 
-app.put('/QualMaster', user.putQualMaster);
-app.put('/PatientMaster', user.putPatientMaster);
+app.put('/api/QualMaster', user.putQualMaster);
+app.put('/api/PatientMaster', user.putPatientMaster);
 
 // DELETE Methods
 
-app.del('/QualMaster', user.deleteQualMaster);
+app.del('/api/QualMaster', user.deleteQualMaster);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

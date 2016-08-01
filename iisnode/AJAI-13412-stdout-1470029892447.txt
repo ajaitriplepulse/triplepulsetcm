@@ -1,0 +1,9 @@
+Express server listening on port \\.\pipe\68e1613f-1bff-4a4c-a676-0d3c62ec41ca
+[90mGET / [33m404 [90m87ms[0m
+[90mGET /api/ [32m200 [90m5ms[0m
+[90mGET /api/QualMaster/ [33m404 [90m2ms[0m
+[90mGET /api/QualMaster [33m404 [90m1ms[0m
+[90mGET /api/QualMaster [33m404 [90m3ms[0m
+[90mGET /api/QualMaster [33m404 [90m1ms[0m
+[90mGET /api/patientmaster [32m200 [90m4620ms - 4.63kb[0m
+[90mGET /api/patientmaster/1 [32m200 [90m1100ms - 689[0m
