@@ -25,6 +25,7 @@ app.configure('development', function(){
 
 // GET Methods 
 
+app.get('/', routes.index1);
 app.get('/api/', routes.index);
 app.get('/api/users/', user.list1);
 app.get('/api/homepage/', user.homepage);
